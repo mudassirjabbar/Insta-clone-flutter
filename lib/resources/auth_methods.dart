@@ -30,8 +30,7 @@ class AuthMethods {
       if (email.isNotEmpty ||
           password.isNotEmpty ||
           username.isNotEmpty ||
-          bio.isNotEmpty ||
-          file != null) {
+          bio.isNotEmpty) {
         //register user
         UserCredential cred = await _auth.createUserWithEmailAndPassword(
             email: email, password: password);
@@ -44,6 +43,7 @@ class AuthMethods {
           email: email,
           password: password,
           bio: bio,
+          photoURL: photoURL,
           followers: [],
           following: [],
         );

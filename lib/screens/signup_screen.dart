@@ -111,7 +111,7 @@ class _SingUpScreenState extends State<SingUpScreen> {
                       left: 80,
                       bottom: -10,
                       child: IconButton(
-                        onPressed: () {},
+                        onPressed: selectImage,
                         icon: const Icon(Icons.add_a_photo),
                       ),
                     ),
